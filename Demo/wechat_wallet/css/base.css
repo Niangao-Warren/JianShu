@@ -1,0 +1,19 @@
+html {
+	font-size: 10px;
+	font-family: arial, "Microsoft Yahei";
+}
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 1em;
+}
+img {
+	display: block;
+	width: 100%;
+}

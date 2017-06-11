@@ -1,0 +1,120 @@
+#header {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	background-color: #393a3f;
+	color: #fff;
+}
+#header .back-btn {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/icon_back.jpg);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: center center;
+	position: relative;
+}
+#header .back-btn::after {
+	content:"";
+	position: absolute;
+	width: 1px;
+	height: 25px;
+	right: 0;
+	top: 12px;
+	background-color: #2e2e32;
+}
+#header .header-title {
+	flex-grow: 1;
+	padding-left: 12px;
+}
+#header .header-title h1 {
+	font-size: 1.8rem;
+	margin-bottom: 2px;
+}
+#header .header-title p {
+	color: #a0a0a0;
+}
+#header .wallet-btn {
+	width: 90px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.5rem;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+}
+
+#header .wallet-btn::before {
+	content:"";
+	position: absolute;
+	width: 1px;
+	height: 25px;
+	left: 0;
+	top: 12px;
+	background-color: #2e2e32;
+}
+
+#walletBox {
+	margin-top: 30px;
+	text-align: center;
+}
+#walletBox .wallet-title {
+	width: 28.8%;
+	margin: 0 auto;
+	font-size: 1.9rem;
+}
+#walletBox .wallet-title p {
+	margin-top: 10px;
+}
+.acount {
+	font-size: 3.5rem;
+	margin-top: 15px;
+}
+.btn-box {
+	width: 92.2%;
+	margin: 40px auto 0;
+}
+.btn-box a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	font-size: 2rem;
+	border-radius: 4px;
+	margin-bottom: 14px;
+}
+.charge-btn {
+	background-color: #1aad19;
+	color: #fff;
+}
+.cash-btn {
+	background-color: #f1f1f1;
+	color: #282828;
+	border: 1px solid #b7b7b7;
+}
+.wallet-tips {
+	display: inline-block;
+	color: #4668ab;
+	font-size: 1.5rem;
+	background-image: url(../img/icon_1.jpg);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: left top;
+	padding-left: 24px;
+}
+
+#footer {
+	margin-top: 120px;
+	text-align: center;
+	line-height: 1.8;
+}
+#footer a {
+	text-decoration: none;
+	color: #4668ab;
+	font-size: 1.2rem;
+}
+#footer p {
+	color: #c5c5c5;
+	font-size: 1rem;
+}
