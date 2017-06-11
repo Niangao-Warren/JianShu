@@ -1,0 +1,8 @@
+<!--welcome.wxml-->
+<view class="container">
+  <image class="avatar" src="/images/avatar/niangao.png"></image>
+  <text class="motto">Hello，Nian糕</text>
+  <view class="journey-container">
+    <text class="journey">开起小程序之旅</text>
+  </view>
+</view>
