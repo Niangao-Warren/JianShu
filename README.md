@@ -3,6 +3,8 @@
 
 ## Demo 效果图
 
+Demo文件夹里相对应的效果图，之前自己写的一些效果和静态页面
+
 Less_login
 
 ![image](https://github.com/Niangao-Warren/JianShu/blob/master/Demo/Rendering/Less_login.png)
