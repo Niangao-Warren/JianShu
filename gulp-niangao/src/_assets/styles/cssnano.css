@@ -1,0 +1,17 @@
+.css_nano, .css_nano + p, [class*="css_nano"], .css_nano {
+  font-weight: normal; 
+  margin-top: 1rem; 
+  margin-bottom: 2rem; 
+  margin-left: 1.5rem; 
+  margin-right: 2.5rem; 
+  font-weight: normal; 
+  padding: 1.75rem; 
+  width: calc(50rem - (2 * 1.75rem)); 
+  } 
+a { 
+  text-decoration: none; 
+  font-weight: bold; 
+} 
+p { 
+  font-weight: bold; 
+}

@@ -1,0 +1,1 @@
+.common{background-color:blue}.vmFallback{width:50vm;width:50vmin}.remFallback{height:160px;height:10rem;font:32px Arial;font:2rem Arial}.remFallback:before{content:"";line-height:16px;line-height:1rem}.cssnext{background:red;background:rgba(255,0,0,.9)}.precss{background:green}

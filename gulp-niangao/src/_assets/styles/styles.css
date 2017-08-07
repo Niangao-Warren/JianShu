@@ -1,0 +1,28 @@
+@import 'common.css';
+
+.vmFallback {
+  width: 50vmin;
+}
+
+.remFallback {
+  height: 10rem;
+  font: 2rem Arial;
+}
+
+.remFallback::before {
+  content: '';
+  line-height: 1rem;
+}
+
+.cssnext {
+  background: color(red alpha(-10%));
+}
+
+.precss {
+  @if 3 < 5 {
+    background: green;
+  }
+  @else {
+    background: blue;
+  }
+}
