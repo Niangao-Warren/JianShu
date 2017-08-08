@@ -11,5 +11,5 @@ gulp.task('jshint', () => {
 
 /*
     gulp-jshint js代码校验 https://github.com/spalger/gulp-jshint
-    jshint-stylish 外部报告器 https://github.com/spalger/gulp-jshint
+    jshint-stylish 外部报告器 https://github.com/sindresorhus/jshint-stylish
 */

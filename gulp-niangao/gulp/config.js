@@ -125,16 +125,16 @@ module.exports = {
                     // "selector-list-comma-space-before": "never", // 在选择器列表的逗号之前需要一个空格或不允许空格
                     // "selector-list-comma-newline-after": "always", // 在选择器列表的逗号后面需要换行符或不允许空格
                     // "string-quotes": "double", // 在字符串周围指定单引号或双引号
-                    // "value-no-vendor-prefix": true // 不允许值的供应商前缀
+                    // "value-no-vendor-prefix": true, // 不允许值的供应商前缀
                     // rules 使用 [0, 1, 2] 来代表规则启用状态不同，具体的规则可在 https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md 中查找
-                    'color-no-invalid-hex': true, // 禁止无效的十六进制颜色
-                    'block-no-empty': true, // 禁止空块
-                    'declaration-no-important': true, // !important在声明内不允许
-                    'property-no-unknown': true, // 禁止未知的属性
-                    'selector-pseudo-class-no-unknown': true, // 禁止未知的伪类选择器
-                    'selector-pseudo-element-no-unknown': true, // 禁止未知的伪元素选择器
-                    'selector-type-no-unknown': true, // 禁止未知类型选择器
-                    'media-feature-name-no-unknown': true, // 禁止未知的媒体查询的名称
+                    "color-no-invalid-hex": true, // 禁止无效的十六进制颜色
+                    "block-no-empty": true, // 禁止空块
+                    "declaration-no-important": true, // !important在声明内不允许
+                    "property-no-unknown": true, // 禁止未知的属性
+                    "selector-pseudo-class-no-unknown": true, // 禁止未知的伪类选择器
+                    "selector-pseudo-element-no-unknown": true, // 禁止未知的伪元素选择器
+                    "selector-type-no-unknown": true, // 禁止未知类型选择器
+                    "media-feature-name-no-unknown": true, // 禁止未知的媒体查询的名称
                 }
             },
             reporter: {

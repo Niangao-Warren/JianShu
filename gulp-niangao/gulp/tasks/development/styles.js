@@ -37,7 +37,7 @@ gulp.task('styles',() => {
 /*
     autoprefixer 处理浏览器私有前缀 https://github.com/postcss/autoprefixer
     cssnext 使用CSS未来的语法 https://github.com/MoOx/postcss-cssnext
-    precss 预处理插件包，可实现像LESS、Sass预处理器的功能 https://github.com/jonathantneal/precss
+    precss 预处理插件包，可实现像Less、Sass预处理器的功能 https://github.com/jonathantneal/precss
     postcss-color-rgba-fallback 给rgba()颜色添加一个十六进制的颜色作为降级处理，IE8不支持rgba()颜色 https://github.com/postcss/postcss-color-rgba-fallback
     postcss-opacity 给IE浏览器添加滤镜属性，IE8不支持opacity属性 https://github.com/iamvdo/postcss-opacity
     postcss-pseudoelements 将伪元素的::转换为: https://github.com/axa-ch/postcss-pseudoelements
