@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style type="text/css">
+		*{margin:0px; padding:0px;}
+		#Tabs{width:300px; height:305px;border:1px solid #ddd;margin:50px auto;}
+		#Tabs ul li{list-style-type:none;padding:0px 10px 0px 10px;}
+		#Tabs ul li a{color:#2d2d2d;font-size:14px; text-decoration:none;}
+		#Tabs ul li a:hover{color:#eb1c24;}		
+		#Tabs ul li span.hover a{color:#eb1c24;}
+		#Tabs ul li span a{color:#726168;}
+		#Tabs ul li span a:hover{color:#eb1c24;}
+		#Tabs ul li p{line-height:30px;}
+		#Tabs ul li img{width:278px;height:170px;display:none;}
+		#Tabs ul li img.xs{display:block;}		
+	</style>
+</head>
+<body>
+	<div id="Tabs">
+		<ul>
+			<li class="bg">
+				<p>
+					<span class="hover"><a href="http://www.jianshu.com/u/b0c7095032f3">第一个年糕</a></span>
+				</p>
+				<img src="images/n1.jpg" class="xs">
+			</li>
+			<li>
+				<p>
+					<span><a href="http://www.jianshu.com/u/b0c7095032f3">第二个年糕</a></span>
+				</p>
+				<img src="images/n2.jpg">
+			</li>
+			<li>
+				<p>
+					<span><a href="http://www.jianshu.com/u/b0c7095032f3">第三个年糕</a></span>
+				</p>
+					<img src="images/n3.jpg">
+			</li>
+		</ul>
+	</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#Tabs ul li").mouseover(function(){
+		$("#Tabs ul li p span").removeClass("hover");
+		$(this).find("p span").addClass("hover");
+		$("#Tabs ul li img").hide();
+		$(this).find("img").show();
+
+		$("#Tabs ul li").removeClass("bg");
+		$(this).addClass("bg");
+	});
+</script>
+</body>
+</html>
