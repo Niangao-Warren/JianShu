@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.12'
+- 'iojs'
+before_install:
+- sudo add-apt-repository ppa:rwky/graphicsmagick -y
+- sudo apt-get update -q
+- sudo apt-get install graphicsmagick
+notifications:
+  slack:
+    secure: fmFrUa1QpA3aNT/Wf9Zac7zMPyUKQc2rov1ZAWku/yu4NM3L5vUp4qZFcin2wy1KP6yhlRVITsbBe+dIi+Mi/kG/aoBAc/KhvzfxWWSyKiJyoloC5TQc830ht2H+UvNHYgt1Zb3A+krZQhmH5/FBD0WCZVULYI+g7KXBQ8/W0Eg=

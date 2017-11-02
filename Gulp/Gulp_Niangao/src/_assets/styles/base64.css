@@ -1,0 +1,8 @@
+body {
+    background-color: #fdfdfd;
+    background-image: url("/src/_assets/images/sprites/close.png"); 
+    background-size: 20px 20px;
+}
+div {
+    background-image: url("/src/_assets/images/123.jpg");     
+}

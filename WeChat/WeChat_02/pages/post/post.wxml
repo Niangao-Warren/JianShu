@@ -1,0 +1,65 @@
+<!--pages/post/post.wxml-->
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" circular="true">
+    <swiper-item>
+      <image src="/images/post/post-1@text.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/post-2@text.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/post-3@text.jpg" />
+    </swiper-item>
+  </swiper>
+  <view class="post-container">
+    <view class="post-author-date">
+      <image src="/images/avatar/avatar-5.png" />
+      <text>Jan 28 2017</text>
+    </view>
+    <text class="post-title">小时候的冰棍儿与雪糕</text>
+    <image class="post-image" src="/images/post/post-4.jpg" mode="aspectFill" />
+    <text class="post-content">冰棍与雪糕绝对不是同一个东西。3到5毛钱的雪糕犹如现在的哈根达斯，而5分1毛的冰棍儿就像现在的老冰棒。时过境迁，...</text>
+    <view class="post-like">
+     <image src="/images/icon/wx_app_collect.png" />
+     <text>108</text>
+     <image src="/images/icon/wx_app_view.png" />
+     <text>92</text>
+     <image src="/images/icon/wx_app_message.png" />
+     <text>7</text>
+    </view>
+  </view>
+  <view class="post-container">
+    <view class="post-author-date">
+      <image src="/images/avatar/avatar-1.png" />
+      <text>Jan 9 2017</text>
+    </view>
+    <text class="post-title">从童年呼啸而过的火车</text>
+    <image class="post-image" src="/images/post/post-5.jpg" mode="aspectFill" />
+    <text class="post-content">小时候，家的后面有一条铁路。听说从南方北上的火车都必须经过这条铁路。火车大多在晚上经过，但也不定时只有在夜深人静的时候，火车的声音才能从远方传来...</text>
+    <view class="post-like">
+     <image src="/images/icon/wx_app_collect.png" />
+     <text>108</text>
+     <image src="/images/icon/wx_app_view.png" />
+     <text>92</text>
+     <image src="/images/icon/wx_app_message.png" />
+     <text>7</text>
+    </view>
+  </view>
+  <view class="post-container">
+    <view class="post-author-date">
+      <image src="/images/avatar/avatar-3.png" />
+      <text>Jan 29 2017</text>
+    </view>
+    <text class="post-title">记忆里的春节</text>
+    <image class="post-image" src="/images/post/post-1.jpg" mode="aspectFill" />
+    <text class="post-content">年少时，有几样东西，是春节里必不可少的：烟花、心意、凉茶、压岁钱、饺子。年分大小年，有的地方是腊月二十三过小年，有的地方是腊月二十四...</text>
+    <view class="post-like">
+     <image src="/images/icon/wx_app_collect.png" />
+     <text>108</text>
+     <image src="/images/icon/wx_app_view.png" />
+     <text>92</text>
+     <image src="/images/icon/wx_app_message.png" />
+     <text>7</text>
+    </view>
+  </view>
+</view>

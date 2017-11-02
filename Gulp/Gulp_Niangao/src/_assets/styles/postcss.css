@@ -1,0 +1,20 @@
+.autoprefixer {
+  display: flex;
+  transform: translateY(20px) rotate(45deg);
+  background: rgba(0,0,0,0.5);
+  opacity: 0.5;
+}
+
+:root {
+    --fontSize: 1rem;
+    --mainColor: #12345678;
+    --highlightColor: hwb(190, 35%, 20%);
+}
+
+body {
+    color: var(--mainColor);
+    font-size: var(--fontSize);
+    line-height: calc(var(--fontSize) * 1.5);
+    padding: calc((var(--fontSize) / 2) + 1px);
+    background-color: var(--highlightColor);
+}

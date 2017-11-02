@@ -1,0 +1,13 @@
+.icon {
+    background-image: url("../images/sprite.png");
+}
+.icon-png {
+    background-position: -0px -0px;
+    width: 136px;
+    height: 136px;
+}
+.icon-jpg {
+    background-position: -0px -136px;
+    width: 520px;
+    height: 520px;
+}

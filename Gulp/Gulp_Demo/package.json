@@ -1,0 +1,10 @@
+{
+  "name": "gulp-demo",
+  "version": "1.0.0",
+  "description": "This is for study gulp project",
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.0"
+  }
+}

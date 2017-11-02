@@ -1,0 +1,94 @@
+ .menu {
+    width: 100%;
+    a {
+        text-decoration: none; 
+    }
+    &::before {
+        content: '';
+    }
+}
+
+$text_color: #232323;
+
+body {
+    color: $text_color;
+}
+
+$column_layout: 2;
+
+.column {
+    @if $column_layout == 2 {
+        width: 50%;
+        float: left;
+    } @else {
+        width: 100%;
+    }
+}
+
+@for $i from 1 to 3 {
+    p:nth-of-type($i) {
+        margin-left: calc(100% / $i);
+    }
+}
+
+$social: twitter,facebook,youtube;
+
+@each $icon in ($social) {
+    .icon-$(icon) {
+        background: url('img/$(icon).png');
+    }
+}
+
+@define-mixin icon $network,$color {
+    .button.$(network) {
+        background-image: url('img/$(network).png');
+        background-color: $color;
+    }
+}
+
+@mixin icon twitter, blue;
+
+@mixin icon youtube, red;
+
+@define-mixin icon $network,$color {
+    .button.$(network) {
+        background-image: url('img/$(network).png');
+        background-color: $color;
+        @mixin-content;
+    }
+} 
+
+@mixin icon twitter, blue {
+    width: 3rem;
+}
+
+@mixin icon youtube, red {
+    width: 4rem;
+}
+
+@define-extend rounded_button {
+    border-radius: 0.5rem;
+    padding: 1em;
+    border-width: 0.0625rem;
+    border-style: solid;
+}
+
+.bule_button {
+    @extend rounded_button;
+    border-color: #2F74D1;
+    background-color: #3B8EFF;
+}
+
+.red_button {
+    @extend rounded_button;
+    border-color: #C41A1E;
+    background-color: #FF2025;
+}
+
+:root {
+    --h1_font_size: 3rem;
+}
+
+h1 {
+    font-size: var(--h1_font_size);
+}
