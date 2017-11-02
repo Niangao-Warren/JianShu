@@ -1,0 +1,45 @@
+body, html {
+    font: 10px/1.5 helvetica, arial, Microsoft Yahei
+}
+blockquote, body, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, html, input, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0
+}
+table, td, th, tr {
+    font-size: 10px
+}
+a {
+    text-decoration: none
+}
+ol, ul {
+    list-style: none
+}
+li {
+    list-style-type: none
+}
+img {
+    display: block;
+    width: 100%
+}
+input, select {
+    outline: none
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400
+}
+address, cite, code, em, i, th {
+    font-weight: 400;
+    font-style: normal
+}
+.clearfix {
+    zoom: 1
+}
+.clearfix:after {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: "."
+}
