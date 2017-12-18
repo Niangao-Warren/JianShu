@@ -1,9 +1,0 @@
-node_modules
-coverage
-.DS_Store
-*.log
-build
-test/dist
-test/out
-npm-debug.log
-todo.md
