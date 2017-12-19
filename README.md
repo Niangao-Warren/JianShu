@@ -2,6 +2,12 @@
 
 展示在简书博客中的一些示例代码，个人简书地址：http://www.jianshu.com/u/b0c7095032f3
 
+### 前端自动化构建工具 Gulp
+
+Gulp 是基于 NodeJS 的前端自动化构建工具，在项目开发过程中自动化地完成 html / css / js / image / sass / less 等文件的编译、合并、压缩、语法检查、浏览器自动刷新等重复性任务，项目中的所有依赖包如下图所示，而关于该项目的更多讲解及使用方法，可查看该篇博文：[从零开始构建你的 Gulp](http://www.jianshu.com/p/0db88fd3f83d)
+
+![思维导图](http://upload-images.jianshu.io/upload_images/1662958-f00782535d04c31a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ### CSS 侧边栏在小屏设备中进行隐藏
 
 当网页内容较多时，通过点击侧边栏，能够使我们能快速回到网页的指定位置，在大屏设备中，侧边栏往往是悬浮于屏幕右侧，很方便用户的使用，但在小屏设备中，屏幕空间有限，所以我们会通过隐藏侧边栏的方式，来节省视口空间的使用
