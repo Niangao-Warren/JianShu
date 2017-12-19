@@ -34,14 +34,48 @@
 
 当我们在浏览网页的时候，描述性的文本通常不会跟在图片之后，而是当我们将鼠标移至图片上时，才会将文本显示出来，这样的好处是，以突显图片为主，并节省布局空间
 
-使用 CSS 来实现鼠标悬停图片，显示隐藏文本的效果
+使用 CSS 来实现鼠标悬停图片，显示隐藏文本的效果：
 
 ![gif](http://upload-images.jianshu.io/upload_images/1662958-c67bfd8aad70719f.gif?imageMogr2/auto-orient/strip)
 
 效果运行地址：[鼠标悬停图片，显示隐藏文本 CSS](https://niangao-warren.github.io/JianShu/Demo/Mouse_movement_text_animation_effect/index.html)
 
-使用 JS 来实现鼠标悬停图片，显示隐藏文本的效果
+使用 JS 来实现鼠标悬停图片，显示隐藏文本的效果：
 
 ![gif](http://upload-images.jianshu.io/upload_images/1662958-45538d1f19bbd6ab.gif?imageMogr2/auto-orient/strip)
 
 效果运行地址：[鼠标悬停图片，显示隐藏文本 JS](https://niangao-warren.github.io/JianShu/Demo/Hover_the_display_text/index.html)
+
+### 鼠标滑动，图片显示隐藏
+
+当一个区域需要展示多张图片，而该区域的空间大小受到限制时，我们可以通过这种方式来达到预览哪张图片就展示该图片，并隐藏其他图片的方式来达到目的
+
+![gif](http://upload-images.jianshu.io/upload_images/1662958-a202050b1239d684.gif?imageMogr2/auto-orient/strip)
+
+效果运行地址：[鼠标滑动，图片显示隐藏](https://niangao-warren.github.io/JianShu/Demo/Mouse_sliding_picture_showing_hidden/index.html)
+
+### Hacker流星雨
+
+使用到了 canvas 元素来让屏幕呈现 Hacker 流星雨效果
+
+![gif](http://upload-images.jianshu.io/upload_images/1662958-55005a78f168bedf.gif?imageMogr2/auto-orient/strip)
+
+![gif](http://upload-images.jianshu.io/upload_images/1662958-2118efdc8b18282e.gif?imageMogr2/auto-orient/strip)
+
+效果运行地址：[Hacker流星雨](https://niangao-warren.github.io/JianShu/Demo/Hacker_meteor_shower.html)
+
+### 九宫格抽奖
+
+活动中常常会有抽奖的方式，而抽奖的方式有很多，但原理上基本是一致的，这里分享一个九宫格的抽奖方式
+
+![gif](http://upload-images.jianshu.io/upload_images/1662958-71d69cce60b4895d.gif?imageMogr2/auto-orient/strip)
+
+效果运行地址：[九宫格抽奖](https://niangao-warren.github.io/JianShu/Demo/Scratchable_latex/index.html)
+
+### 手风琴效果
+
+手风琴效果能够帮助你，在有限的页面空间内，展示多个内容片段，使得用户能非常友好的实现多个内容片段之间的切换
+
+![gif](http://upload-images.jianshu.io/upload_images/1662958-b063bcad0359a66c.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+效果运行地址：[手风琴效果](https://niangao-warren.github.io/JianShu/Demo/Accordion_effect/index.html)
