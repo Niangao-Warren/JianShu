@@ -8,6 +8,12 @@ Gulp 是基于 NodeJS 的前端自动化构建工具，在项目开发过程中�
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-f00782535d04c31a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="350" alt="思维导图">
 
+### WebPack 模块化打包工具
+
+WebPack 的作用是将你的项目当做一个整体，通过分析项目的结构，找到项目中所有依赖的 JavaScript 模块，以及其它的一些浏览器不能直接运行的拓展语言，如 Scss, TypeScript 等，并将其转换和打包为浏览器可识别的 JavaScript 文件，在很多场景下可代替 Gulp/Grunt 类工具
+
+关于该项目的讲解及使用方法，可参考这两篇博文：[WebPack 模块化打包工具（上）](https://www.jianshu.com/p/aab1667ee0db),[WebPack 模块化打包工具（下）](https://www.jianshu.com/p/6acb36f2738b)
+
 ### CSS 侧边栏在小屏设备中进行隐藏
 
 当网页内容较多时，通过点击侧边栏，能够使我们能快速回到网页的指定位置，在大屏设备中，侧边栏往往是悬浮于屏幕右侧，很方便用户的使用，但在小屏设备中，屏幕空间有限，所以我们会通过隐藏侧边栏的方式，来节省视口空间的使用
