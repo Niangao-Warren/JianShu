@@ -14,7 +14,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-1f8e3153387e1b1e.gif?imageMogr2/auto-orient/strip" width="350">
 
-效果运行地址：[侧边栏在小屏设备中进行隐藏](https://niangao-warren.github.io/JianShu/Sidebar_display_and_hidden/index.html)
+效果运行地址：<a src="https://niangao-warren.github.io/JianShu/Sidebar_display_and_hidden/index.html" target="_blank">侧边栏在小屏设备中进行隐藏</a>
 
 ### banner图响应式居中显示
 
