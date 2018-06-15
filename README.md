@@ -87,3 +87,9 @@
 <img src="https://upload-images.jianshu.io/upload_images/1662958-82146e68655278f3.gif?imageMogr2/auto-orient/strip" width="500">
 
 效果运行地址：[放大镜效果](https://niangao-warren.github.io/JianShu/magnifier/index.html)
+
+### 3D立方体
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-119a28a86e19af17.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[3D立方体](https://niangao-warren.github.io/JianShu/Cubic.html)
