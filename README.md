@@ -14,7 +14,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-1f8e3153387e1b1e.gif?imageMogr2/auto-orient/strip" width="350">
 
-效果运行地址：[侧边栏在小屏设备中进行隐藏](https://niangao-warren.github.io/JianShu/Demo/Sidebar_display_and_hidden/index.html)
+效果运行地址：[侧边栏在小屏设备中进行隐藏](https://niangao-warren.github.io/JianShu/Sidebar_display_and_hidden/index.html)
 
 ### banner图响应式居中显示
 
@@ -28,7 +28,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-9500b18c32ba4d3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="400">
 
-效果运行地址：[banner图响应式居中显示](https://niangao-warren.github.io/JianShu/Demo/Banner_response_centered/index.html)
+效果运行地址：[banner图响应式居中显示](https://niangao-warren.github.io/JianShu/Banner_response_centered/index.html)
 
 ### 鼠标悬停图片，显示隐藏文本
 
@@ -44,7 +44,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-45538d1f19bbd6ab.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[鼠标悬停图片，显示隐藏文本 JS](https://niangao-warren.github.io/JianShu/Demo/Hover_the_display_text/index.html)
+效果运行地址：[鼠标悬停图片，显示隐藏文本 JS](https://niangao-warren.github.io/JianShu/Hover_the_display_text/index.html)
 
 ### 鼠标滑动，图片显示隐藏
 
@@ -52,7 +52,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-a202050b1239d684.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[鼠标滑动，图片显示隐藏](https://niangao-warren.github.io/JianShu/Demo/Mouse_sliding_picture_showing_hidden/index.html)
+效果运行地址：[鼠标滑动，图片显示隐藏](https://niangao-warren.github.io/JianShu/Mouse_sliding_picture_showing_hidden/index.html)
 
 ### Hacker流星雨
 
@@ -62,7 +62,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-2118efdc8b18282e.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[Hacker流星雨](https://niangao-warren.github.io/JianShu/Demo/Hacker_meteor_shower.html)
+效果运行地址：[Hacker流星雨](https://niangao-warren.github.io/JianShu/Hacker_meteor_shower.html)
 
 ### 九宫格抽奖
 
@@ -70,7 +70,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-71d69cce60b4895d.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[九宫格抽奖](https://niangao-warren.github.io/JianShu/Demo/Scratchable_latex/index.html)
+效果运行地址：[九宫格抽奖](https://niangao-warren.github.io/JianShu/Scratchable_latex/index.html)
 
 ### 手风琴效果
 
@@ -78,4 +78,12 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-b063bcad0359a66c.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="500">
 
-效果运行地址：[手风琴效果](https://niangao-warren.github.io/JianShu/Demo/Accordion_effect/index.html)
+效果运行地址：[手风琴效果](https://niangao-warren.github.io/JianShu/Accordion_effect/index.html)
+
+### 放大镜效果
+
+在浏览电商网站时，放大镜的效果能够让我们了解更多关于该商品的细节
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-82146e68655278f3.gif?imageMogr2/auto-orient/strip">
+
+效果运行地址：[放大镜效果](https://niangao-warren.github.io/JianShu/magnifier/index.html)
