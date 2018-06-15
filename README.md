@@ -93,3 +93,9 @@
 <img src="https://upload-images.jianshu.io/upload_images/1662958-119a28a86e19af17.gif?imageMogr2/auto-orient/strip" width="500">
 
 效果运行地址：[3D立方体](https://niangao-warren.github.io/JianShu/Cubic.html)
+
+### Loading按钮闪烁
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-1e95181d329fa88a.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[Loading按钮闪烁](https://niangao-warren.github.io/JianShu/Loading_blinking.html)
