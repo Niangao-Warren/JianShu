@@ -84,6 +84,6 @@
 
 在浏览电商网站时，放大镜的效果能够让我们了解更多关于该商品的细节
 
-<img src="https://upload-images.jianshu.io/upload_images/1662958-82146e68655278f3.gif?imageMogr2/auto-orient/strip">
+<img src="https://upload-images.jianshu.io/upload_images/1662958-82146e68655278f3.gif?imageMogr2/auto-orient/strip" width="500">
 
 效果运行地址：[放大镜效果](https://niangao-warren.github.io/JianShu/magnifier/index.html)
