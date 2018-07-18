@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+    color:#333;
+}
+body {
+    background-color: #3383aa;
+}
+ul,ol {
+    list-style: none;
+}
+#container {
+    width:600px;
+    margin:20px auto;
+    border-radius: 4px;
+    padding:20px 40px 10px; 
+    background-color: #fff;
+}
+textarea {
+    resize: none;
+    width:580px;
+    height: 100px;
+    padding:8px;
+    font-size: 16px;
+    -webkik-appearance:none;
+    outline: none;
+    box-shadow:inset 0 0 5px 0 #ccc;
+}
+textarea:focus {
+    border:1px solid #f7671d;
+    box-shadow: none;
+}
+.user-bar {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.user-bar span,.user-bar input {
+    vertical-align: middle;
+}
+.user-bar input {
+    -webkik-appearance:none;
+    outline: none;
+    border:1px solid #999;
+    font-size: 14px;
+    box-shadow:inset 0 0 3px 0 #ccc;
+    padding: 4px 8px;
+}
+.user-bar input:focus {
+    box-shadow: none;
+    border:1px solid #f7671d;
+}
+.word-tips {
+    /*text-align: right;*/
+    margin-top: 12px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 28px;
+}
+.left-tips {
+    float: left;
+    line-height: 30px;
+}
+
+.submit-button {
+    float: right;
+    margin-right: 4px;
+    width:82px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ff8140;
+    border-radius: 2px;
+    color:#fff;
+    transition:background 1s;
+}
+.submit-button:hover {
+    background-color: #f7671d;
+}
+.left-tips span {
+    font-family: Constantia, Georgia;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+#msgList {
+    margin-top: 20px;
+    padding-bottom: 8px;
+}
+#msgList li {
+    overflow: hidden;
+    padding-bottom: 1px;
+}
+#msgList li div{
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom:1;
+}
+.logo {
+    margin-right: 18px;
+}
+.user-info {
+    width:520px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.user-info .txt {
+    line-height: 1.5;
+    color:#666;
+}
+a {
+    text-decoration: none;
+}
+.user-name {
+    overflow: hidden;
+}
+.del-btn
+{
+    font-size: 14px;
+    color:#666;
+}
+.user-name span {
+    float: left;
+}
+.user-info span {
+    font-weight: bold;
+    color:#333;
+}
+.user-info a {
+    float: right;
+}
+.user-info a:hover{
+    color:#eb7350;
+}
+.logo img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+*::selection {
+    background-color:#ff8140;
+    color:#fff;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="container">
+		<form>
+			<p class="user-bar">
+				<label>用户：<input type="text" id="userName"></label>
+			</p>
+			<textarea id="msg"></textarea>
+			<p class="word-tips">
+				<span class="left-tips">还可以输入<span id="wordNumber">140</span>个字</span>
+				<a href="javascript:void(0);" class="submit-button" id="submitBtn">发布</a>
+			</p>
+		</form>
+
+		<ul id="msgList">
+			<!-- <li>
+				<div class="logo">
+					<img src="images/Nian糕.jpg">
+				</div>
+				<div class="user-info">
+					<p class="user-name"><span>Nian糕</span><a href="javascript:void(0);" class="del-btn">删除</a></p>
+					<p class="txt">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
+				</div>
+			</li> -->
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/tween.js"></script>
+	<script type="text/javascript">
+		var submitBtn  = document.getElementById("submitBtn"),
+			msgList    = document.getElementById("msgList"),
+			userName   = document.getElementById("userName"),
+			commentMsg = document.getElementById("msg"),
+			wordNumber = document.getElementById("wordNumber");
+
+		// 插入评论
+		submitBtn.onclick = function() {
+			// 判断用户名及评论内容均不为空，才能创建一条新的评论
+			var userVal    = userName.value,
+				commentVal = commentMsg.value;
+			if(!userVal) {
+				// 判断用户名是否为空，空则获取焦点，并退出
+				userName.focus();
+				return;
+			}
+			if(!commentVal) {
+				// 判断评论是否为空，空则获取焦点，并退出
+				commentMsg.focus();
+				return;
+			}
+
+			var li = document.createElement("li");
+			li.innerHTML = '<div class="logo">' +
+								'<img src="images/Nian糕.jpg">' +
+							'</div>' +
+							'<div class="user-info">' +
+								'<p class="user-name"><span>' + userVal + '</span><a href="javascript:void(0);" class="del-btn">删除</a></p>' +
+								'<p class="txt">' + commentVal + '</p>' +
+							'</div>';
+			msgList.insertBefore(li,msgList.children[0]);
+
+			// 添加插入动画
+			var start = 0;
+			var end = li.offsetHeight; // 获取插入元素的高度
+			var change = end - start;
+			var t = 0;
+			var maxT = 30;
+			li.style.height = 0; // 放在获取高度之后，重置为 0
+			var timer = setInterval(function() {
+				t++;
+				if(t >= maxT) {
+					clearInterval(timer);
+				}
+				// li.style.height = change/maxT * t + start + "px";
+				li.style.height = Tween.Bounce.easeOut(t,start,change,maxT) + "px";
+			},17)
+
+			// 评论插入之后，用户名及评论输入框清空
+			userName.value = "";
+			commentMsg.value = "";
+			wordNumber.innerHTML = 140;
+
+			var delBtn = li.getElementsByTagName("a")[0];
+			// 从新创建的 li 里查找 del 按钮 a
+			delBtn.onclick = function() {
+				// 点击按钮删除该条评论				
+				var start = li.offsetHeight;
+				var end = 0; // 获取插入元素的高度
+				var change = end - start;
+				var t = 0;
+				var maxT = 30;
+				var timer = setInterval(function() {
+					t++;
+					if(t >= maxT) {
+						clearInterval(timer);
+						msgList.removeChild(li); // 动画完成之后，才移除元素
+					}
+					// li.style.height = change/maxT * t + start + "px";
+					li.style.height = Tween.Bounce.easeOut(t,start,change,maxT) + "px";
+				},17)
+			}
+		}
+
+		// 检测字数的变化，表单事件，检测表单value的表换
+		commentMsg.oninput = function() {
+			console.log(this.value);
+			if(140 - this.value.length < 0) {
+				// 判断字符串长度 超过140截断
+				commentMsg.value = commentMsg.value.substring(0,140);
+				return false;
+			}
+			wordNumber.innerHTML = 140 - this.value.length;
+		}
+
+		// 低版本ie检测表单value的变化
+		commentMsg.onpropertychang = function(e) {
+			// 事件对象
+			var e = e || window.event;
+			if (e.propertyName.toLowerCase() === "value") {
+				wordNumber.innerHTML = 140 - this.value.length;
+			}
+		}
+	</script>
+</body>
+</html>
