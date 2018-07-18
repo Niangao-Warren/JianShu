@@ -94,6 +94,12 @@
 
 效果运行地址：[3D立方体](https://niangao-warren.github.io/JianShu/Cubic.html)
 
+### 走马灯
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-d6ea94bb6c5eef84.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[走马灯](https://niangao-warren.github.io/JianShu/Walking_lights.html)
+
 ### Loading按钮闪烁
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-1e95181d329fa88a.gif?imageMogr2/auto-orient/strip" width="500">
