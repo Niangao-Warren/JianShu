@@ -108,12 +108,12 @@
 
 ### 右键自定义菜单
 
-<img src="https://upload-images.jianshu.io/upload_images/1662958-04accec762a221dc.gif?imageMogr2/auto-orient/strip" width="500">
+<img src="https://upload-images.jianshu.io/upload_images/1662958-acd72677010a131f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="400">
 
 效果运行地址：[右键自定义菜单](https://niangao-warren.github.io/JianShu/Custom_menu.html)
 
 ### 碰壁反弹
 
-<img src="https://upload-images.jianshu.io/upload_images/1662958-acd72677010a131f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="400">
+<img src="https://upload-images.jianshu.io/upload_images/1662958-04accec762a221dc.gif?imageMogr2/auto-orient/strip" width="500">
 
 效果运行地址：[碰壁反弹](https://niangao-warren.github.io/JianShu/Bumping.html)
