@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		ul,li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			cursor: context-menu;
+		}
+		#menu {
+			position: fixed;
+			left: 0;
+			top: 0;
+			display: none;
+			width: 100px;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			background-color: lightgreen;
+		}
+		#list {
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: none;
+			width: 100px;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			background-color: lightblue;
+		}
+		li:hover {
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li>动画</li>
+		<li id="play">番剧
+			<ul id="list">
+				<li>连载动画</li>
+				<li>完结动画</li>
+				<li>资讯</li>
+				<li>番剧索引</li>
+			</ul>
+		</li>
+		<li>音乐</li>
+		<li>直播</li>
+		<li>舞蹈</li>
+		<li>游戏</li>
+	</ul>
+	<script type="text/javascript">
+		var menu = document.getElementById("menu"),
+			play = document.getElementById("play"),
+			list = document.getElementById("list");
+
+		document.addEventListener("contextmenu",function(e) {
+			e.preventDefault(); 
+			menu.style.display = "block";
+			menu.style.left = e.clientX + "px";
+			menu.style.top = e.clientY + "px";
+		}, false)
+
+		play.addEventListener("mouseenter",function(e) {
+			list.style.display = "block";
+			list.style.left = menu.offsetWidth + "px";
+			list.style.top = (menu.offsetHeight - 100) + "px";
+		}, false)
+
+		play.addEventListener("mouseleave",function(e) {
+			list.style.display = "none";
+		}, false)
+
+		document.addEventListener("click",function(e) {
+			menu.style.display = "none";
+		}, false)
+
+		menu.addEventListener("click",function(e) {
+			e.stopPropagation();
+		}, false)
+
+	</script>
+</body>
+</html>

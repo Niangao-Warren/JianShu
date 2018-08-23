@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box {
+			width: 500px;
+			height: 300px;
+			border: 1px solid lightseagreen;
+			position: relative;
+		}
+		#block {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 50px;
+			height: 50px;
+			background-color: lightgreen;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="block"></div>
+	</div>
+	<script type="text/javascript">
+		var box    = document.getElementById("box"),
+			block  = document.getElementById("block"),
+			oLeft  = block.offsetLeft, //block块默认的偏移值
+			oTop   = block.offsetTop,
+			deltaX = 2, //水平方向上每单位时间的增量
+			deltaY = 3; //竖直方向上每单位时间的增量
+		setInterval(function() {
+			oLeft += deltaX;
+			oTop  += deltaY;
+			if(oLeft > box.clientWidth - block.offsetWidth || oLeft < 0) {
+				deltaX *= -1;
+			}
+			if(oTop > box.clientHeight - block.offsetHeight || oTop < 0) {
+				deltaY *= -1;
+			}
+			block.style.left = oLeft + "px";
+			block.style.top  = oTop + "px";
+		}, 17)
+	</script>
+</body>
+</html>
