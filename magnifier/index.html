@@ -1,44 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>放大镜效果</title>
 	<meta charset="UTF-8">
-	<title>Document</title>
 	<style type="text/css">
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		#minBox, #maxBox {
-			border: 4px solid #ddd;
-			margin-left: 20px;
-			margin-top: 30px;
-		}
-		#minBox {
-			position: relative;
-			width: 320px;
-			height: 320px;
-		}
-		#slider {
-			display: none;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 160px;
-			height: 160px;
-			background-color: hsla(46, 80%, 53%, 0.6);
-		}
-		#maxBox {
-			display: none;
-			position: absolute;
-			left: 380px;
-			top: 0;
-			width: 320px;
-			height: 320px;
-			overflow: hidden;
-		}
-		#maxBox img {
-			position: absolute;
-		}
+		*{margin:0;padding:0}
+		#maxBox,#minBox{border:4px solid #ddd;margin-left:20px;margin-top:30px}
+		#minBox{position:relative;width:320px;height:320px}
+		#slider{display:none;position:absolute;left:0;top:0;width:160px;height:160px;background-color:hsla(46,80%,53%,.6)}
+		#maxBox{display:none;position:absolute;left:380px;top:0;width:320px;height:320px;overflow:hidden}
+		#maxBox img{position:absolute}
 	</style>
 </head>
 <body>

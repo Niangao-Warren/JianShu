@@ -1,40 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>右键自定义菜单</title>
 	<meta charset="UTF-8">
-	<title>Document</title>
 	<style type="text/css">
-		ul,li {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			cursor: context-menu;
-		}
-		#menu {
-			position: fixed;
-			left: 0;
-			top: 0;
-			display: none;
-			width: 100px;
-			color: #fff;
-			font-size: 16px;
-			text-align: center;
-			background-color: lightgreen;
-		}
-		#list {
-			position: absolute;
-			left: 0;
-			top: 0;
-			display: none;
-			width: 100px;
-			color: #fff;
-			font-size: 16px;
-			text-align: center;
-			background-color: lightblue;
-		}
-		li:hover {
-			background-color: #000;
-		}
+		li,ul{margin:0;padding:0;list-style:none;cursor:context-menu}
+		#menu{position:fixed;left:0;top:0;display:none;width:100px;color:#fff;font-size:16px;text-align:center;background-color:#90ee90}
+		#list{position:absolute;left:0;top:0;display:none;width:100px;color:#fff;font-size:16px;text-align:center;background-color:#add8e6}
+		li:hover{background-color:#000}
 	</style>
 </head>
 <body>
