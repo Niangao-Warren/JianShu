@@ -117,3 +117,9 @@
 <img src="https://upload-images.jianshu.io/upload_images/1662958-04accec762a221dc.gif?imageMogr2/auto-orient/strip" width="500">
 
 效果运行地址：[碰壁反弹](https://niangao-warren.github.io/JianShu/Bumping.html)
+
+### 转圈圈
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-1b54500ea15eb64a.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[转圈圈](https://niangao-warren.github.io/JianShu/GoRound/index.html)
