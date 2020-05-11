@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hacker流星雨</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+		*{margin:0px;padding:0px;}
+		body{overflow:hidden;}
+	</style>
+</head>
+<body>
+	<canvas id="canvas">
+		IE这种上古神器居然还有人在用？？
+	</canvas>
+	<script>
+		const canvas = document.getElementById("canvas"),
+		      ctx    = canvas.getContext("2d"),
+		      s      = window.screen,
+		      w      = canvas.width = s.width,
+			  h      = canvas.height = s.height;
+
+		let   words  = Array(256).join("1").split("");
+
+		setInterval( () => {
+			ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+			ctx.fillRect(0, 0, w, h); 	
+			ctx.fillStyle = color1();
+
+			//数组元素的映射
+			words.map( (y,n) => {
+				text = String.fromCharCode(Math.ceil(65 + Math.random() * 57))//生成A-Z a-z之间的值
+				x = n * 10;
+				ctx.fillText(text, x, y);
+				words[n] = (y > 758 + Math.random() * 484 )? 0 : y + 10;
+			});
+		},50);
+
+		function color1(){
+			let color = "";
+			const colors = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
+			for(let i = 0; i < 6; i++){
+				const n = Math.ceil(Math.random() * 15);
+				color += "" + colors[n];				
+				if(i == 5){
+					return "#" + color;
+				}
+			}
+		}
+
+		function color2(){
+			let color = Math.ceil(Math.random() * 16777215).toString(16);
+			while(color.length < 6) {
+				color = "0" + color;
+			}
+			return "#" + color;
+		}
+
+		function color3(){
+			return "#" + ( color => {
+				return new Array(7 - color.length).join("0") + color;
+			})((Math.random() * 0x1000000 << 0).toString(16))
+		}
+	</script>
+</body>
+</html>

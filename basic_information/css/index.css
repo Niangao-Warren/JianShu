@@ -1,0 +1,73 @@
+body {
+	background-color: #f2f2f2;
+	margin: 0 auto;
+}
+header {
+	height: 44px;
+	line-height: 44px;
+	background-color: #f29004;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #fff;
+	font-weight: bolder;
+	position: relative;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
+}
+.back-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	background: url(../img/icon_arrow.png) no-repeat;
+	background-size: 50% 50%;
+	background-position: center center;
+}
+section ul:nth-child(1) {
+	border-top:none;
+}
+.user-info {
+	margin-bottom: 10px;
+	border-top: 1px solid #ccc;
+	background-color: #fff;
+}
+.user-info li {
+	height: 44px;
+	line-height: 44px;
+	font-size: 1.6rem;
+	border-bottom: 1px solid #cccccc;
+	background: url(../img/icon_arrow_1.png) no-repeat;
+	background-size: 18px 18px;
+	background-position: 97% center;
+}
+.user-info .header-list {
+	height: 75px;
+	line-height: 75px;
+}
+.user-info .no-alink {
+	background: none;
+}
+.user-header {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.user-info a {
+	display: block;
+	color: #808080;
+	padding: 0 8.2% 0 3.2%;
+}
+.member-level {
+	margin-top: 12px;
+	width: 21px;
+	height: 21px;
+	background: url(../img/icon_diamond.png) no-repeat;
+	background-size: 21px 21px;
+}
+.info-content {
+	float: right;
+}

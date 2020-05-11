@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style type="text/css">
+		#moveBlock {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100px;
+			height: 100px;
+			background-color: coral;
+			border-radius: 50%;
+		}
+		#staticBlock {
+			position: absolute;
+			left: 200px;
+			top: 300px;
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<div id="moveBlock"></div>
+	<div id="staticBlock"></div>
+
+	<script type="text/javascript">
+		var moveBlock   = document.getElementById("moveBlock"),
+			staticBlock = document.getElementById("staticBlock"),
+
+		// 获取移动的块初始位置
+			startLeft 	= moveBlock.offsetLeft,
+			startTop  	= moveBlock.offsetTop,
+		// 单位时间内的水平竖直方向增量
+			detalX 		= 1,
+			detalY 		= 2,
+		// 块运动最大值
+			maxX 		= document.documentElement.clientWidth - moveBlock.offsetWidth,
+			maxY 		= document.documentElement.clientHeight - moveBlock.offsetHeight,
+			staticPos 	= staticBlock.getBoundingClientRect();
+
+		setInterval(function() {
+			startLeft += detalX;
+			startTop  += detalY;
+			// 判断边界
+			if(startLeft > maxX || startLeft < 0) {
+				detalX *= -1;
+			}
+			if(startTop > maxY || startTop < 0) {
+				detalY *= -1;
+			}
+			moveBlock.style.left = startLeft + "px";
+			moveBlock.style.top  = startTop + "px";
+			var movePos = moveBlock.getBoundingClientRect();
+			if(movePos.right >= staticPos.left && staticPos.right >= movePos.left && movePos.bottom >= staticPos.top && staticPos.bottom >= movePos.top) {
+				// 碰撞条件
+				if(movePos.right <= staticPos.left || staticPos.right <= movePos.left) {
+					detalX *= -1;
+				}else if(movePos.bottom <= staticPos.top || staticPos.bottom <= movePos.top) {
+					detalY *= -1;
+				}
+			}
+		}, 1)
+	</script>
+</body>
+</html>

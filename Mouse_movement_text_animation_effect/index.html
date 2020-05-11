@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>鼠标悬停图片，显示隐藏文本 CSS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+		#Main{width:600px; margin:50px auto; height:400px;}
+		.con{width:500px;height:360px; float:left; margin:0px 10px;position:relative; box-shadow:3px 3px 10px #666;overflow:hidden;}
+		.con img{width:500px;height:360px;}
+		.con span{width:248px; height:390px; background:#333;position:absolute;left:-500px;top:0px;filter:Alpha(opacity=80);-moz-opacity: 0.8; opacity: 0.8; padding:20px; -webkit-transition:left 0.5s ease;}
+		.con span h1{height:30px; color:#fff; font-size:18px;text-align:center; position:relative;left:-500px; -webkit-transition:left 1s ease;}
+		.con span p{line-height:25px; font-size:14px; color:#fff; position:relative; left:-500px;-webkit-transition:left 1s ease;}
+		.con:hover span{left:0px;}
+		.con:hover span h1{left:0px;}
+		.con:hover span p{left:0px;}
+	</style>
+</head>
+<body>
+	<div id="Main">
+		<div class="con">
+			<img src="image/n1.jpg">
+			<span>
+				<h1>世界上最好的年糕</h1>
+				<p>多熬粥少熬夜，多吃鸡腿少吃亏</p>
+			</span>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>转圈圈</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="./img/logo.ico">
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+		body {
+			background-color: #010110;
+		}
+		#drag-container, #spin-container {
+			position: relative;
+			margin: 325px auto 0;
+			transform-style: preserve-3d;
+			transform: rotateX(2deg);
+		}
+		#drag-container img {
+			transform-style: preserve-3d;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 20px;
+		}
+		@keyframes spin {
+			from{
+				transform: rotateY(0deg);
+			} to{
+				transform: rotateY(360deg);
+			}
+		}
+		@keyframes spinRevert {
+			from{
+				transform: rotateY(360deg);
+			} to{
+				transform: rotateY(0deg);
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div id="drag-container">
+		<div id="spin-container">
+			<img src="img/item_01.png">
+			<img src="img/item_02.png">
+			<img src="img/item_03.png">
+			<img src="img/item_04.png">
+			<img src="img/item_05.png">
+			<img src="img/item_06.png">
+			<img src="img/item_07.png">
+			<img src="img/item_08.png">
+			<img src="img/item_09.png">
+			<img src="img/item_10.png">
+			<img src="img/item_11.png">
+			<img src="img/item_12.png">
+			<img src="img/item_13.png">
+			<img src="img/item_14.png">
+			<img src="img/item_15.png">
+			<img src="img/item_16.png">
+			<img src="img/item_17.png">
+			<img src="img/item_18.png">
+			<img src="img/item_19.png">
+			<img src="img/item_20.png">
+			<img src="img/item_21.png">
+			<img src="img/item_22.png">
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		function renderUI(){
+			let radius		= 340,
+			rotateSpeed   = -60,
+			aImg          = $('#spin-container img'),
+			aEle          = [...aImg],
+			animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
+			setTimeout(function(){
+				for (let i = 0; i < aEle.length; i++) {
+					aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+					aEle[i].style.transition = "transform 1s";
+					aEle[i].style.transitionDelay = (aEle.length - i) / 6 + "s";
+				}
+			}, 100);
+			$('#spin-container').css({
+				'width': '80px',
+				'height': '26px',
+				'animation': animationName + ' ' + Math.abs(rotateSpeed) + 's infinite linear'
+			})
+		}
+		renderUI()
+	</script>
+</body>
+</html>

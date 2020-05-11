@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        .simple_text, .full_text {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .simple_text p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="simple_text">
+                <p>别堆砌怀念让剧情 变得狗血 深爱了多年又何必 毁了经典 都已成年不拖不欠</p>
+                <a href="javascript:void(0);" class="show_btn" onclick="showdiv(this);">展开全文</a>
+            </div>
+            <div class="full_text" style="display:none;">
+                <p>别堆砌怀念让剧情 变得狗血 深爱了多年又何必 毁了经典 都已成年不拖不欠</p>
+                <a href="javascript:void(0);" class="hidden_btn" onclick="hidediv(this);">收起全文</a>
+            </div>
+        </li>
+        <li>
+            <div class="simple_text">
+                <p>别堆砌怀念让剧情 变得狗血 深爱了多年又何必 毁了经典 都已成年不拖不欠 浪费时间是我情愿 像谢幕的演员 眼看着灯光熄灭 来不及 再轰轰烈烈 就保留 告别的尊严 我爱你不后悔 也尊重故事结尾 分手应该体面 谁都不要说抱歉 何来亏欠 我敢给就敢心碎 镜头前面是从前的我们 在喝彩 流着泪声嘶力竭 离开也很体面 才没辜负这些年 爱得热烈 认真付出的画面 别让执念 毁掉了昨天 我爱过你 利落干脆</p>
+                <a href="javascript:void(0);" class="show_btn" onclick="showdiv(this);">展开全文</a>
+            </div>
+            <div class="full_text" style="display:none;">
+                <p>别堆砌怀念让剧情 变得狗血 深爱了多年又何必 毁了经典 都已成年不拖不欠 浪费时间是我情愿 像谢幕的演员 眼看着灯光熄灭 来不及 再轰轰烈烈 就保留 告别的尊严 我爱你不后悔 也尊重故事结尾 分手应该体面 谁都不要说抱歉 何来亏欠 我敢给就敢心碎 镜头前面是从前的我们 在喝彩 流着泪声嘶力竭 离开也很体面 才没辜负这些年 爱得热烈 认真付出的画面 别让执念 毁掉了昨天 我爱过你 利落干脆</p>
+                <a href="javascript:void(0);" class="hidden_btn" onclick="hidediv(this);">收起全文</a>
+            </div>
+        </li>
+    </ul>
+
+    <script type="text/javascript">
+        // 显示全文按钮
+        $.each($(".simple_text p"), function(i, o){
+            if($('.simple_text p').eq(i).height() >= 50){
+                $('.simple_text p').eq(i).next().css('display','block');
+            }else {
+                $('.simple_text p').eq(i).next().css('display','none');
+            }
+        });
+        // 展开全文
+        function showdiv(obj) {  
+            var x = obj.parentNode;  
+            var y = x.nextSibling;
+            if(y.nodeType != 1){  
+                y = y.nextSibling;  
+            }
+            y.style.display = "block";  
+            x.style.display = "none";  
+        }
+       // 收起全文  
+        function hidediv(obj) {
+            var y = obj.parentNode;  
+            var x = y.previousSibling;  
+            if(x.nodeType != 1){
+                x = x.previousSibling;  
+            }
+            y.style.display = "none";
+            x.style.display = "block";
+        }
+    </script>
+</body>
+</html>

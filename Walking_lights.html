@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>走马灯</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		#box{width:800px;height:400px;margin:200px auto;position:relative;transform-style:preserve-3d;animation:move 3s infinite;transform:rotateX(30deg)}
+		#box div{position:absolute;top:0;left:300px;color:#fff;width:200px;height:100px}
+		#box div:nth-child(1){background-color:hsla(0,100%,50%,.4);transform:transLateZ(400px)}
+		#box div:nth-child(2){background-color:hsla(30,100%,50%,.4);transform:rotateY(30deg) transLateZ(400px)}
+		#box div:nth-child(3){background-color:hsla(60,100%,50%,.4);transform:rotateY(60deg) transLateZ(400px)}
+		#box div:nth-child(4){background-color:hsla(90,100%,50%,.4);transform:rotateY(90deg) transLateZ(400px)}
+		#box div:nth-child(5){background-color:hsla(120,100%,50%,.4);transform:rotateY(120deg) transLateZ(400px)}
+		#box div:nth-child(6){background-color:hsla(150,100%,50%,.4);transform:rotateY(150deg) transLateZ(400px)}
+		#box div:nth-child(7){background-color:hsla(180,100%,50%,.4);transform:rotateY(180deg) transLateZ(400px)}
+		#box div:nth-child(8){background-color:hsla(210,100%,50%,.4);transform:rotateY(210deg) transLateZ(400px)}
+		#box div:nth-child(9){background-color:hsla(240,100%,50%,.4);transform:rotateY(240deg) transLateZ(400px)}
+		#box div:nth-child(10){background-color:hsla(270,100%,50%,.4);transform:rotateY(270deg) transLateZ(400px)}
+		#box div:nth-child(11){background-color:hsla(300,100%,50%,.4);transform:rotateY(300deg) transLateZ(400px)}
+		#box div:nth-child(12){background-color:hsla(330,100%,50%,.4);transform:rotateY(330deg) transLateZ(400px)}
+		@keyframes move{0%{transform:rotateX(30deg) rotateY(0)}
+		100%{transform:rotateX(30deg) rotateY(360deg)}
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+	</div>
+</body>
+</html>
