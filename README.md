@@ -151,5 +151,3 @@
 <img src="https://upload-images.jianshu.io/upload_images/1662958-cf2be588a6098fcf.gif?imageMogr2/auto-orient/strip" width="300">
 
 效果运行地址：[彩票机](https://niangao-warren.github.io/JianShu/Something/Random_number.html)
-
-效果运行地址：<a href="https://niangao-warren.github.io/JianShu/Something/Random_number.html" target="_blank">彩票机</a>
