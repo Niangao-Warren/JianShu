@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>鼠标悬停图片，显示隐藏文本 JS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+		*{margin:0px;padding:0px;}
+		#content{width:800px;height:180px;margin:200px auto 0px;border-bottom:1px solid #990033;}
+		#content ul{list-style:none;width:750px;height:180px;margin:auto;}
+		#content ul li{width:250px;height:180px;float:left;position:relative;overflow:hidden;}
+		#content ul li div.tit{width:250px;height:50px;position:absolute;left:0px;bottom:-50px;background:rgba(0,0,0,0.5);}
+		#content ul li div.tit p{color:#fff;text-align:center;margin:3px;font-family:"微软雅黑";}
+		#footer{width:800px;height:160px;}
+		#footer div.tel{width:100%;height:30px;color:#993300;font-size:12px;margin-left:40px;margin-top:10px;margin-bottom:20px;}
+		#footer div.tel p a{width:50px;height:32px;display:inline-block;vertical-align:middle;}
+		#footer div.detail{width:100%;height:50px;margin-left:40px;color:#993300;font-size:12px;}
+		#footer div.detail p{margin-top:5px;}
+		#footer div.detail p.curr{font-weight:bold;}
+		#footer div.footer-nav{width:280px;float:right;color:#993300;font-size:12px;}
+		#footer div.footer-nav ul li{list-style:none;float:left;margin-top:10px;}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<ul>
+			<li>
+				<img src="images/n1.jpg" width="250" height="180">
+				<div class="tit">
+					<p>世界上最好的</p>
+					<p>Nian糕</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/n2.jpg" width="250" height="180">
+				<div class="tit">
+					<p>世界上最好的</p>
+					<p>Nian糕</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/n3.jpg" width="250" height="180">
+				<div class="tit">
+					<p>世界上最好的</p>
+					<p>Nian糕</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<script src="js/jquery.js"></script>
+	<script>
+		$("#content ul li").hover(function(){
+			$(this).find("div").stop().animate({
+				"bottom":"0px"
+			},1000);				
+		},function(){
+			$(this).find("div").stop().animate({
+				"bottom":"-50px"
+			},1000);
+		});
+	</script>
+</body>
+</html>

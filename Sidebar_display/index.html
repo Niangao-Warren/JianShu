@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>侧边栏在小屏设备中进行隐藏</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        #nav_1, #nav_2, #nav_3, #nav_4 {
+            margin-top: 20px;
+        }
+        img {
+            width: 550px;
+            height: 820px;
+            margin: 0 auto;
+        }
+        .c_nav_side {
+            width: 180px;
+            height: 496px;
+            position: fixed;
+            right: 10px;
+            top: 200px;            
+        }
+        .c_nav_side a {
+            display: block;
+            width: 180px;
+            height: 124px;
+        }
+        .c_nav_1 {
+            background: url(img/nav_1.png) no-repeat;
+            background-size: 180px 124px;
+        }
+        .c_nav_2 {
+            background: url(img/nav_2.png) no-repeat;
+            background-size: 180px 124px;
+        }
+        .c_nav_3 {
+            background: url(img/nav_3.png) no-repeat;
+            background-size: 180px 124px;
+        }
+        .c_nav_4 {
+            background: url(img/nav_4.png) no-repeat;
+            background-size: 180px 124px;
+        }
+        .c_nav_tips {
+            position: fixed;
+            right: 0;
+            top: 180px;
+            width: 100px;
+            height: 135px;
+            z-index: 10;
+            background: url(img/tips.png) no-repeat;
+            background-size: 100px 135px;
+        }
+        /* 小于等于1410px的设备 */
+        @media screen and (max-width: 1410px) {
+            .c_nav_side {
+                right: -240px;
+                position: fixed;
+                top: 140px;
+            }
+            .c_nav_tips {
+                display: block;
+            }
+        }
+        /* 大于等于1410px的设备 */
+        @media screen and (min-width: 1410px) {
+            .c_nav_side{
+                position: absolute;				
+                top: 1000px;
+                left: 80%;
+            }
+            .c_nav_fix{
+                position: fixed;
+                top: 140px;
+            }
+            .c_nav_tips {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="nav_1">
+        <img src="img/1.jpg">
+    </div>
+    <div id="nav_2">
+        <img src="img/2.jpg">
+    </div>
+    <div id="nav_3">
+        <img src="img/3.jpg">
+    </div>
+    <div id="nav_4">
+        <img src="img/4.jpg">
+    </div>
+
+    <div class="c_nav_tips"></div>
+    <div class="c_nav_side">
+        <ul>
+            <li>
+                <a href="#nav_1" class="c_nav_1"></a>
+            </li>
+            <li>
+                <a href="#nav_2" class="c_nav_2"></a>
+            </li>
+            <li>
+                <a href="#nav_3" class="c_nav_3"></a>
+            </li>
+            <li>
+                <a href="#nav_4" class="c_nav_4"></a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        var Sidebar = {
+            init: function(){
+                this.bindEvent();
+            },
+            bindEvent:function(){
+                var that = this;
+                var $navSide = $('.c_nav_side');
+                $(window).on('scroll', function(){
+                    if($(this).scrollTop() > 855){
+                        $navSide.addClass('c_nav_fix');
+                    }else{
+                        $navSide.removeClass('c_nav_fix');
+                    }
+                });
+                //侧边栏
+                $('.c_nav_tips').on('mouseenter', function(){
+                    $('.c_nav_tips').animate({'right': '-120px'});
+                    $('.c_nav_side').animate({'right': '10px'});
+                });
+                $('.c_nav_side').on('mouseleave', function(){
+                    $('.c_nav_tips').animate({'right': '0px'});
+                    $('.c_nav_side').animate({'right': '-240px'});
+                })
+            }
+        }
+        Sidebar.init();
+    </script>
+</body>
+</html>

@@ -14,7 +14,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-1f8e3153387e1b1e.gif?imageMogr2/auto-orient/strip" width="350">
 
-效果运行地址：[侧边栏在小屏设备中进行隐藏](https://niangao-warren.github.io/JianShu/Sidebar_display_and_hidden/index.html)
+效果运行地址：[侧边栏在小屏设备中进行隐藏](https://niangao-warren.github.io/JianShu/Sidebar_display/index.html)
 
 ### banner图响应式居中显示
 
@@ -38,13 +38,13 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-c67bfd8aad70719f.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[鼠标悬停图片，显示隐藏文本 CSS](https://niangao-warren.github.io/JianShu/Demo/Mouse_movement_text_animation_effect/index.html)
+效果运行地址：[鼠标悬停图片，显示隐藏文本 CSS](https://niangao-warren.github.io/JianShu/Demo/Text_display_CSS/index.html)
 
 使用 JS 来实现鼠标悬停图片，显示隐藏文本的效果：
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-45538d1f19bbd6ab.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[鼠标悬停图片，显示隐藏文本 JS](https://niangao-warren.github.io/JianShu/Hover_the_display_text/index.html)
+效果运行地址：[鼠标悬停图片，显示隐藏文本 JS](https://niangao-warren.github.io/JianShu/Text_display_JavaScript/index.html)
 
 ### 鼠标滑动，图片显示隐藏
 
@@ -52,7 +52,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-a202050b1239d684.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[鼠标滑动，图片显示隐藏](https://niangao-warren.github.io/JianShu/Mouse_sliding_picture_showing_hidden/index.html)
+效果运行地址：[鼠标滑动，图片显示隐藏](https://niangao-warren.github.io/JianShu/Picture_display/index.html)
 
 ### Hacker流星雨
 
