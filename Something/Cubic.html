@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>3D立方体</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		#box{width:400px;height:400px;position:relative;margin:60px auto 0;transform-style:preserve-3d;animation-name:move;animation-duration:5s;animation-iteration-count:infinite}
+		#box div{position:absolute;left:100px;top:100px;width:200px;height:200px;color:#fff;font-size:68px}
+		#box div:nth-child(1){background-color:hsla(0,100%,50%,.4);transform:translateZ(100px)}
+		#box div:nth-child(2){background-color:hsla(60,100%,50%,.4);transform:translateZ(-100px)}
+		#box div:nth-child(3){background-color:hsla(120,100%,50%,.4);transform:translateX(100px) rotateY(90deg)}
+		#box div:nth-child(4){background-color:hsla(180,100%,50%,.4);transform:translateX(-100px) rotateY(-90deg)}
+		#box div:nth-child(5){background-color:hsla(240,100%,50%,.4);transform:translateY(-100px) rotateX(90deg)}
+		#box div:nth-child(6){background-color:hsla(300,100%,50%,.4);transform:translateY(100px) rotateX(-90deg)}
+		@keyframes move{0%{transform:rotate3d(0,0,0,0)}
+		25%{transform:rotate3d(0,1,.4,180deg)}
+		50%{transform:rotate3d(.7,.2,0,270deg)}
+		75%{transform:rotate3d(0,.2,1,-180deg)}
+		100%{transform:rotate3d(.8,1,0,0deg)}
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+</body>
+</html>
