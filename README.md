@@ -54,6 +54,14 @@
 
 效果运行地址：[鼠标滑动，图片显示隐藏](https://niangao-warren.github.io/JianShu/Picture_display/index.html)
 
+### 展开全文和收起全文
+
+我们在浏览文章列表页的时候，往往只会看到一部分的摘要，在摘要下面会有一个展开全文的按钮，点开后就能看到完整内容，而原来的展开全文按钮此时变成了收齐全文的按钮，同样的，点击该按钮之后，又会回到之前显示部分摘要的状态
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-13c81a9cd6559b44.gif?imageMogr2/auto-orient/strip" width="400">
+
+效果运行地址：[展开全文和收起全文](https://niangao-warren.github.io/JianShu/Something/Show_full_text.html)
+
 ### Hacker流星雨
 
 使用到了 canvas 元素来让屏幕呈现 Hacker 流星雨效果
@@ -62,7 +70,7 @@
 
 <img src="http://upload-images.jianshu.io/upload_images/1662958-2118efdc8b18282e.gif?imageMogr2/auto-orient/strip" width="400">
 
-效果运行地址：[Hacker流星雨](https://niangao-warren.github.io/JianShu/Hacker_meteor_shower.html)
+效果运行地址：[Hacker流星雨](https://niangao-warren.github.io/JianShu/Something/Hacker_meteor_shower.html)
 
 ### 九宫格抽奖
 
@@ -92,34 +100,54 @@
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-119a28a86e19af17.gif?imageMogr2/auto-orient/strip" width="500">
 
-效果运行地址：[3D立方体](https://niangao-warren.github.io/JianShu/Cubic.html)
+效果运行地址：[3D立方体](https://niangao-warren.github.io/JianShu/Something/Cubic.html)
 
 ### 走马灯
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-d6ea94bb6c5eef84.gif?imageMogr2/auto-orient/strip" width="500">
 
-效果运行地址：[走马灯](https://niangao-warren.github.io/JianShu/Walking_lights.html)
+效果运行地址：[走马灯](https://niangao-warren.github.io/JianShu/Something/Walking_lights.html)
 
 ### Loading按钮闪烁
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-1e95181d329fa88a.gif?imageMogr2/auto-orient/strip" width="500">
 
-效果运行地址：[Loading按钮闪烁](https://niangao-warren.github.io/JianShu/Loading_blinking.html)
+效果运行地址：[Loading按钮闪烁](https://niangao-warren.github.io/JianShu/Something/Loading_blinking.html)
 
 ### 右键自定义菜单
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-acd72677010a131f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="400">
 
-效果运行地址：[右键自定义菜单](https://niangao-warren.github.io/JianShu/Custom_menu.html)
+效果运行地址：[右键自定义菜单](https://niangao-warren.github.io/JianShu/Something/Custom_menu.html)
 
 ### 碰壁反弹
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-04accec762a221dc.gif?imageMogr2/auto-orient/strip" width="500">
 
-效果运行地址：[碰壁反弹](https://niangao-warren.github.io/JianShu/Bumping.html)
+效果运行地址：[碰壁反弹_1](https://niangao-warren.github.io/JianShu/Something/Bumping_1.html)
+
+效果运行地址：[碰壁反弹_2](https://niangao-warren.github.io/JianShu/Something/Bumping_2.html)
 
 ### 转圈圈
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-1b54500ea15eb64a.gif?imageMogr2/auto-orient/strip" width="500">
 
 效果运行地址：[转圈圈](https://niangao-warren.github.io/JianShu/GoRound/index.html)
+
+### 翻转
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-580df15afbdd42ef.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[翻转](https://niangao-warren.github.io/JianShu/Something/Flip.html)
+
+### 百度搜索框
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-72f88c59992b97b3.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[百度搜索框](https://niangao-warren.github.io/JianShu/Something/Baidu_search.html)
+
+### 彩票机
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-cf2be588a6098fcf.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[彩票机](https://niangao-warren.github.io/JianShu/Something/Random_number.html)

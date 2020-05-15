@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随机数--彩票</title>
+	<style type="text/css">
+		div {
+			width: 260px;
+			height: 50px;
+			border: 1px solid #000;
+			text-align: center;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="txt"></div>
+	<button id="beginBtn">go</button>
+	<button id="stopBtn">stop</button>
+	<script type="text/javascript">
+		function rnd(min, max) {
+			return parseInt(Math.random() * (max - min)) + min;
+		}
+
+		function getNumbers() {
+			var arr = []; //存储7个随机数的数组容器
+			while(arr.length < 7) { // while 循环条件 数组个数小于等于7
+			
+				var num = rnd(1, 34); // 产生的随机数
+				for(var i = 0; i < arr.length; i++) {
+					if(arr[i] === num) {
+						break; // break 终止for循环
+					}	
+				}
+				if(i === arr.length) {//for循环没有被break掉的时候，即表示产生的随机数跟数组里的元素都不相同，才将该随机数压入数组
+					// arr.push(num);
+					arr[i] = num;
+				}
+			}
+			return arr;
+		}
+
+		var txt 	 = document.getElementById("txt"),
+			beginBtn = document.getElementById("beginBtn"),
+			stopBtn  = document.getElementById("stopBtn");
+
+		txt.innerHTML = getNumbers();
+
+		var timer = 0; //计时器id
+		//点击开始
+		beginBtn.onclick = function() {
+			clearInterval(timer); //在开启计时器之前，先清掉
+			timer = setInterval(function() {
+				txt.innerHTML = getNumbers();
+			}, 100);			
+		}
+		stopBtn.onclick = function() {
+			clearInterval(timer);
+		}
+	</script>
+</body>
+</html>
