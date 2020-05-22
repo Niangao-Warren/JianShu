@@ -11,26 +11,26 @@
 	<ol id="listbox"></ol>
 
 	<script type="text/javascript">
-		var key 	= document.getElementById("key"),
-			listbox = document.getElementById("listbox");
+		let key 	  = document.getElementById("key"),
+				listbox = document.getElementById("listbox");
 
 		function show(data) {
-			listbox.innerHTML = "";
-			for(var i = 0; i < data.s.length; i++) {
-				var li = document.createElement("li");
-				li.innerHTML = data.s[i];
-				listbox.appendChild(li);
+			listbox.innerHTML = ""
+			for(let i = 0; i < data.s.length; i++) {
+				let li = document.createElement("li")
+				li.innerHTML = data.s[i]
+				listbox.appendChild(li)
 			}
 		}
 
 		key.oninput = function() {
 			// 百度 jsonp 接口地址
-			var url = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+ this.value +"&cb=show";
+			let url = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+ this.value +"&cb=show";
 			// 函数名改成对应的
-			var script = document.createElement("script");
-			script.src = url;
-			document.body.appendChild(script);
-			script.remove();
+			let script = document.createElement("script");
+			script.src = url
+			document.body.appendChild(script)
+			script.remove()
 		}
 	</script>
 </body>

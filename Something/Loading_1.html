@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#loading {
+			width: 120px;
+			height: 100px;
+			margin: 60px;
+		}
+		#loading span {
+			background-color: lightblue;
+			height: 60px;
+			width: 8px;
+			display: inline-block;
+			animation: move 1s infinite ease-in-out;
+		}
+		#loading span:nth-child(1) {
+			animation-delay:-1.2s;
+		}
+		#loading span:nth-child(2) {
+			animation-delay:-1.1s;
+		}
+		#loading span:nth-child(3) {
+			animation-delay:-1s;
+		}
+		#loading span:nth-child(4) {
+			animation-delay:-0.9s;
+		}
+		#loading span:nth-child(5) {
+			animation-delay:-0.8s;
+		}
+		@keyframes move {
+			0%, 40%, 100% {
+				transform: scaleY(0.6);
+			}
+			20% {
+				transform: scaleY(1); 
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="loading">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+</html>

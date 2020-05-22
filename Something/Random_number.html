@@ -21,41 +21,39 @@
 		function rnd(min, max) {
 			return parseInt(Math.random() * (max - min)) + min;
 		}
-
 		function getNumbers() {
-			var arr = []; //存储7个随机数的数组容器
+			let arr = []; //存储7个随机数的数组容器
 			while(arr.length < 7) { // while 循环条件 数组个数小于等于7
-			
-				var num = rnd(1, 34); // 产生的随机数
-				for(var i = 0; i < arr.length; i++) {
+				let num = rnd(1, 34); // 产生的随机数
+				for(let i = 0; i < arr.length; i++) {
 					if(arr[i] === num) {
-						break; // break 终止for循环
+						break // break 终止for循环
 					}	
 				}
 				if(i === arr.length) {//for循环没有被break掉的时候，即表示产生的随机数跟数组里的元素都不相同，才将该随机数压入数组
 					// arr.push(num);
-					arr[i] = num;
+					arr[i] = num
 				}
 			}
-			return arr;
+			return arr
 		}
 
-		var txt 	 = document.getElementById("txt"),
-			beginBtn = document.getElementById("beginBtn"),
-			stopBtn  = document.getElementById("stopBtn");
+		let txt 	 	 = document.getElementById("txt"),
+				beginBtn = document.getElementById("beginBtn"),
+				stopBtn  = document.getElementById("stopBtn");
 
-		txt.innerHTML = getNumbers();
+		txt.innerHTML = getNumbers()
 
-		var timer = 0; //计时器id
+		let timer = 0; //计时器id
 		//点击开始
 		beginBtn.onclick = function() {
 			clearInterval(timer); //在开启计时器之前，先清掉
 			timer = setInterval(function() {
-				txt.innerHTML = getNumbers();
-			}, 100);			
+				txt.innerHTML = getNumbers()
+			}, 100)		
 		}
 		stopBtn.onclick = function() {
-			clearInterval(timer);
+			clearInterval(timer)
 		}
 	</script>
 </body>

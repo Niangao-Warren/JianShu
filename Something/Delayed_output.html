@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>延时输出</title>
+</head>
+<body>
+  <div id="wrap"></div>
+  <script type="text/javascript">
+    let str    = `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur reiciendis ipsa veniam porro aliquid voluptatem 
+                accusamus minima, perspiciatis enim facere mollitia temporibus, 
+                soluta excepturi voluptatum distinctio magni error officia, eum`,
+        i      = 0,
+        result = "";
+    let timer = setInterval(function() {
+        i++
+        result += str[i]
+        if (i > str.length - 2) {
+            clearInterval(timer)
+        }
+        document.body.innerHTML = result
+    }, 0)
+  </script>
+</body>
+</html>

@@ -21,47 +21,47 @@
 		<img src="img/max.jpg">
 	</div>
 	<script type="text/javascript">
-		var minBox = document.getElementById("minBox"),
-			slider = document.getElementById("slider"),
-			maxBox = document.getElementById("maxBox"),
-			maxPic = maxBox.children[0],
-			pos    = minBox.getBoundingClientRect();
+		let minBox = document.getElementById("minBox"),
+				slider = document.getElementById("slider"),
+				maxBox = document.getElementById("maxBox"),
+				maxPic = maxBox.children[0],
+				pos    = minBox.getBoundingClientRect();
 
 		//鼠标移入事件，显示滑块跟放大的部分
-		minBox.addEventListener("mouseenter",function(e) {
-			slider.style.display = "block";
-			maxBox.style.display = "block";
-		},false)
+		minBox.addEventListener("mouseenter", function(e) {
+			slider.style.display = "block"
+			maxBox.style.display = "block"
+		}, false)
 
 		//鼠标移动事件
 		minBox.addEventListener("mousemove",function(e) {
-			var bLeft = e.clientX - pos.left - (slider.offsetWidth/2),
-				bTop  = e.clientY - pos.top - (slider.offsetHeight/2);
+			let bLeft = e.clientX - pos.left - (slider.offsetWidth/2),
+					bTop  = e.clientY - pos.top - (slider.offsetHeight/2);
 			
 			if(bLeft > minBox.clientWidth - slider.offsetWidth) {
 				bLeft = minBox.clientWidth - slider.offsetWidth;
 			}else if(bLeft < 0) {
-				bLeft = 0;
+				bLeft = 0
 			}
 			if(bTop > minBox.clientHeight - slider.offsetHeight) {
-				bTop = minBox.clientHeight - slider.offsetHeight;
+				bTop = minBox.clientHeight - slider.offsetHeight
 			}else if(bTop < 0) {
-				bTop = 0;
+				bTop = 0
 			}
 			// 能够移动的left值/minBox的总宽度
-			var scaleX = bLeft / minBox.clientWidth,
-				scaleY = bTop / minBox.clientHeight;
+			let scaleX = bLeft / minBox.clientWidth,
+					scaleY = bTop / minBox.clientHeight;
 			
-			slider.style.left = bLeft + "px";
-			slider.style.top  = bTop + "px";
-			maxPic.style.left = - scaleX * maxPic.offsetWidth + "px";
-			maxPic.style.top  = - scaleY * maxPic.offsetHeight + "px";
-		},false)
+			slider.style.left = bLeft + "px"
+			slider.style.top  = bTop + "px"
+			maxPic.style.left = - scaleX * maxPic.offsetWidth + "px"
+			maxPic.style.top  = - scaleY * maxPic.offsetHeight + "px"
+		}, false)
 
 		minBox.addEventListener("mouseleave",function(e) {
-			slider.style.display = "none";
-			maxBox.style.display = "none";
-		},false)
+			slider.style.display = "none"
+			maxBox.style.display = "none"
+		}, false)
 	</script>
 </body>
 </html>

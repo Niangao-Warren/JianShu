@@ -114,6 +114,16 @@
 
 效果运行地址：[Loading按钮闪烁](https://niangao-warren.github.io/JianShu/Something/Loading_blinking.html)
 
+### Loading
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-4befc2c3fdba3b87.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[Loading_1](https://niangao-warren.github.io/JianShu/Something/Loading_1.html)
+
+效果运行地址：[Loading_2](https://niangao-warren.github.io/JianShu/Something/Loading_2.html)
+
+效果运行地址：[Animate](https://niangao-warren.github.io/JianShu/Something/Animate.html)
+
 ### 右键自定义菜单
 
 <img src="https://upload-images.jianshu.io/upload_images/1662958-acd72677010a131f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="400">
@@ -151,3 +161,15 @@
 <img src="https://upload-images.jianshu.io/upload_images/1662958-cf2be588a6098fcf.gif?imageMogr2/auto-orient/strip" width="300">
 
 效果运行地址：[彩票机](https://niangao-warren.github.io/JianShu/Something/Random_number.html)
+
+### 延时输出
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-018c0514810af43d.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[延时输出](https://niangao-warren.github.io/JianShu/Something/Delayed_output.html)
+
+### 新浪微博
+
+<img src="https://upload-images.jianshu.io/upload_images/1662958-bcbf93f245542383.gif?imageMogr2/auto-orient/strip" width="500">
+
+效果运行地址：[新浪微博](https://niangao-warren.github.io/JianShu/Sina_Weibo/index.html)

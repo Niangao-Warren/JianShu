@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box {
+			margin: 50px;
+			width: 100px;
+			height: 100px;
+			background-color: lightgreen;
+			animation: anim 2s infinite;
+		}
+		@keyframes anim {
+			0% {
+				transform: rotateX(0) rotateY(0);
+			}
+			50% {
+				transform: perspective(100px) rotateX(0) rotateY(-180deg);
+			}
+			100% {
+				transform: perspective(400px) rotateX(-180deg) rotateY(-180deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

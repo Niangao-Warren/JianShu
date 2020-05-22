@@ -27,35 +27,34 @@
 		<li>游戏</li>
 	</ul>
 	<script type="text/javascript">
-		var menu = document.getElementById("menu"),
-			play = document.getElementById("play"),
-			list = document.getElementById("list");
+		let menu = document.getElementById("menu"),
+				play = document.getElementById("play"),
+				list = document.getElementById("list");
 
 		document.addEventListener("contextmenu",function(e) {
-			e.preventDefault(); 
-			menu.style.display = "block";
-			menu.style.left = e.clientX + "px";
-			menu.style.top = e.clientY + "px";
+			e.preventDefault()
+			menu.style.display = "block"
+			menu.style.left = e.clientX + "px"
+			menu.style.top = e.clientY + "px"
 		}, false)
 
 		play.addEventListener("mouseenter",function(e) {
-			list.style.display = "block";
-			list.style.left = menu.offsetWidth + "px";
-			list.style.top = (menu.offsetHeight - 100) + "px";
+			list.style.display = "block"
+			list.style.left = menu.offsetWidth + "px"
+			list.style.top = (menu.offsetHeight - 100) + "px"
 		}, false)
 
 		play.addEventListener("mouseleave",function(e) {
-			list.style.display = "none";
+			list.style.display = "none"
 		}, false)
 
 		document.addEventListener("click",function(e) {
-			menu.style.display = "none";
+			menu.style.display = "none"
 		}, false)
 
 		menu.addEventListener("click",function(e) {
-			e.stopPropagation();
+			e.stopPropagation()
 		}, false)
-
 	</script>
 </body>
 </html>

@@ -26,12 +26,12 @@
 		<div id="block"></div>
 	</div>
 	<script type="text/javascript">
-		var box    = document.getElementById("box"),
-			block  = document.getElementById("block"),
-			oLeft  = block.offsetLeft, //block块默认的偏移值
-			oTop   = block.offsetTop,
-			deltaX = 2, //水平方向上每单位时间的增量
-			deltaY = 3; //竖直方向上每单位时间的增量
+		let box    = document.getElementById("box"),
+				block  = document.getElementById("block"),
+				oLeft  = block.offsetLeft, //block块默认的偏移值
+				oTop   = block.offsetTop,
+				deltaX = 2, //水平方向上每单位时间的增量
+				deltaY = 3; //竖直方向上每单位时间的增量
 		setInterval(function() {
 			oLeft += deltaX;
 			oTop  += deltaY;
